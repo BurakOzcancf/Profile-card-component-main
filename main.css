@@ -25,6 +25,7 @@ body {
     left calc(45vw + 5%) top 50vh;
   background-repeat: no-repeat;
   background-color: var(--darkCyan);
+  font-family: Kumbh Sans;
 }
 main {
   width: 21.875em;
