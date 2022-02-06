@@ -1,0 +1,96 @@
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+  --darkGray: hsl(0, 0%, 59%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: top -80vh right calc(45vw + 5%),
+    left calc(45vw + 5%) top 50vh;
+  background-repeat: no-repeat;
+  background-color: var(--darkCyan);
+}
+main {
+  width: 21.875em;
+  padding: 5rem 0 1rem;
+  margin-bottom: 2rem;
+  background-image: url(./images/bg-pattern-card.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1rem;
+  background-color: var(--white);
+}
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+.profile-picture {
+  display: block;
+  margin: auto auto 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.25rem var(--white);
+}
+.person__name {
+  margin: 1.5rem 0 1rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+.person__name span,
+.person__country,
+.dashboard__text {
+  font-weight: 400;
+  color: var(--darkGray);
+}
+.divider {
+  margin: 1rem 0;
+  height: 0.5px;
+  background-color: var(--darkGray);
+  opacity: 0.5;
+}
+.dashboard {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0 0 1rem 1rem;
+  list-style: none;
+}
+.dashboard__num {
+  font-size: 18px;
+  font-weight: 700;
+}
+footer {
+  text-align: center;
+  color: var(--white);
+}
+footer a {
+  background-color: var(--veryDarkDesaturatedBlue);
+  padding: 0.3rem;
+  border-radius: 1rem;
+  color: var(--white);
+  text-decoration: none;
+}
